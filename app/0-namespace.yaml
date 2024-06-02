@@ -3,5 +3,3 @@ apiversion: v1
 kind: Namespace
 metadata:
   name: prod
-  labels:
-    name: prod
