@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: my-app-foo
+  name: my-app-first
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -14,7 +14,7 @@ spec:
     path: environments/staging/my-app
   destination:
     server: https://kubernetes.default.svc
-    namespace: prod
+    namespace: first
   syncPolicy:
     automated:
       prune: true

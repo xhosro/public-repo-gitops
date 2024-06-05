@@ -14,7 +14,7 @@ spec:
     path: environments/staging/my-app-2
   destination:
     server: https://kubernetes.default.svc
-    namespace: prod
+    namespace: bar
   syncPolicy:
     automated:
       prune: true
